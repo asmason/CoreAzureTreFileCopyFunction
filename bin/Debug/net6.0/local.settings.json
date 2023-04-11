@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "ServiceBusConnection": "Endpoint=sb://sbn-egress-rlpttq.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=9PNLMROdaWBeSk9fcdVeGFTayLxOSgZq1+ASbJo2MXs=",
+    "QueueName":"sbq-egress-rlpttq"
+  }
+}

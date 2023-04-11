@@ -1,0 +1,17 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-4.1.1",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "serviceBusTrigger",
+      "connection": "ServiceBusConnection",
+      "queueName": "%QueueName%",
+      "isSessionsEnabled": false,
+      "autoComplete": true,
+      "name": "message"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/FileCopyFunction.dll",
+  "entryPoint": "CoreAzure.Tre.FileCopyFunction.Run"
+}
