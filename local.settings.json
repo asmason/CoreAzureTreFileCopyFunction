@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "ServiceBusConnection": "Endpoint=sb://sbn-ws-bu3mf6.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=sziqdY3e+3WdBZ1hQKc/IXa1za9cSY7rt+ASbGB4oN4=",
+    "QueueName":"sbq-egress-bu3mf6",
+    "DestinationStorageAccount":"https://saegressextbu3mf6.blob.core.windows.net/"
+  }
+}
