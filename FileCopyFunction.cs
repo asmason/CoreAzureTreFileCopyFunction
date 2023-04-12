@@ -52,10 +52,7 @@ namespace CoreAzure.Tre
                 }
                 var destBlobServiceClient = new BlobServiceClient(new Uri(destinationAccountUri), new DefaultAzureCredential());
                 var destBlobContainer = destBlobServiceClient.GetBlobContainerClient(sourceBlobContainer.Name);
-                if(destBlobContainer == null)
-                {
-                    destBlobContainer = await destBlobServiceClient.CreateBlobContainerAsync(sourceBlobContainer.Name);
-                }
+                await destBlobContainer.CreateIfNotExistsAsync();
                 var destBlob = destBlobContainer.GetBlobClient(sourceBlobUriBuilder.BlobName);
                 var destBlobWriteSas = await GetUserDelegationSasForBlob(destBlobContainer, destBlob, 
                     BlobSasPermissions.Read | BlobSasPermissions.List | BlobSasPermissions.Write);
